@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css"; //import external css styles
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const pizzaData = [
   {
     name: "Focaccia",
@@ -48,17 +49,20 @@ const pizzaData = [
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Menu />
-      <Footer />
-      <span className="akram">
-        <strong>
-          @Akram14. Coded With Love :) <br></br>
-        </strong>
-        From Jonas Schmedtmann Course
-      </span>
-    </div>
+    <>
+      <div className="container">
+        <Header />
+        <Menu />
+        <Footer />
+        <span className="akram">
+          <strong>
+            @Akram14. Coded With Love :) <br></br>
+          </strong>
+          From Jonas Schmedtmann Course
+        </span>
+      </div>
+      <SpeedInsights />
+    </>
   );
 }
 
